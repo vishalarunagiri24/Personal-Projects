@@ -1,0 +1,26 @@
+body{
+  background-color: black;
+  color: white;
+}
+::-webkit-scrollbar {
+  display: none; 
+}
+#all-card-container{
+  width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+#poster-img{
+  position: relative;
+  transition: 
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#poster-img:hover{
+  transform: scale(1.08);
+  z-index: 20;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
